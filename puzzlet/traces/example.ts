@@ -25,8 +25,8 @@ ModelPluginRegistry.registerAll(AllModels);
 async function run () {
   try {
     console.log('Starting run function');
-    console.log('Fetching prompt "basic-prompt.prompt.mdx"...');
-    const basicPrompt = await puzzletClient.fetchPrompt("basic-prompt.prompt.mdx");
+    console.log('Fetching prompt "basic.prompt.mdx"...');
+    const basicPrompt = await puzzletClient.fetchPrompt("basic.prompt.mdx");
     console.log('Successfully fetched prompt');
     
     const props = { myProp: 'hello' };
