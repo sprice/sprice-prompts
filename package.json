@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "name": "sprice-prompts",
   "version": "1.0.0",
   "main": "index.js",
@@ -7,5 +8,12 @@
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "@puzzlet/agentmark": "^2.2.2",
+    "@puzzlet/all-models": "^1.1.6",
+    "@puzzlet/sdk": "^2.1.0",
+    "dotenv": "^16.4.7",
+    "typescript": "^5.8.2"
+  }
 }
