@@ -6,11 +6,12 @@ import AllModels from "@puzzlet/all-models";
 
 const apiKey = process.env.PUZZLET_API_KEY!
 const appId = process.env.PUZZLET_APP_ID!
-
+const baseUrl = process.env.PUZZLET_BASE_URL!
 
 const puzzletClient = new Puzzlet({
     apiKey,
-    appId
+    appId,
+    baseUrl
   }, createTemplateRunner);
 const tracer = puzzletClient.initTracing();
 
@@ -25,8 +26,13 @@ ModelPluginRegistry.registerAll(AllModels);
 async function run () {
   try {
     console.log('Starting run function');
-    console.log('Fetching prompt "basic.prompt.mdx"...');
-    const basicPrompt = await puzzletClient.fetchPrompt("basic.prompt.mdx");
+    console.log('Fetching prompt "example.prompt.mdx"...');
+
+
+
+
+
+    const basicPrompt = await puzzletClient.fetchPrompt("example.prompt.mdx");
     console.log('Successfully fetched prompt');
     
     const props = { myProp: 'hello' };
