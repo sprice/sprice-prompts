@@ -1,0 +1,61 @@
+{
+  "version": "1.0.0",
+  "puzzletPath": "/",
+  "modelSchemas": {
+    "gpt-4o": {
+      "label": "GPT-4o",
+      "settings": {
+        "temperature": {
+          "minimum": 0,
+          "maximum": 1,
+          "default": 0.7,
+          "multipleOf": 0.01,
+          "label": "Temperature",
+          "type": "number",
+          "ui": "slider",
+          "order": 2
+        },
+        "max_tokens": {
+          "minimum": 16,
+          "default": 4096,
+          "maximum": 4096,
+          "multipleOf": 1,
+          "label": "Max Tokens",
+          "type": "number",
+          "ui": "slider",
+          "order": 3
+        },
+        "top_p": {
+          "minimum": 0,
+          "maximum": 1,
+          "default": 1,
+          "multipleOf": 0.01,
+          "label": "Top P",
+          "type": "number",
+          "ui": "slider",
+          "order": 4
+        },
+        "frequency_penalty": {
+          "minimum": -2,
+          "maximum": 2,
+          "default": 0,
+          "multipleOf": 0.01,
+          "label": "Frequency Penalty",
+          "type": "number",
+          "ui": "slider",
+          "order": 5
+        },
+        "presence_penalty": {
+          "minimum": -2,
+          "maximum": 2,
+          "default": 0,
+          "multipleOf": 0.01,
+          "label": "Presence Penalty",
+          "type": "number",
+          "ui": "slider",
+          "order": 6
+        }
+      }
+    }
+  }
+}

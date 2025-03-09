@@ -1,0 +1,56 @@
+
+  {
+  "items": [
+    {
+      "input": {
+        "userMessage": "Can you help me understand how to solve quadratic equations?"
+      }
+    },
+    {
+      "input": {
+        "userMessage": "What is the difference between permutations and combinations?"
+      }
+    },
+    {
+      "input": {
+        "userMessage": "How do I find the slope of a line given two points?"
+      }
+    },
+    {
+      "input": {
+        "userMessage": "Why is the Pythagorean theorem important, and how do I use it?"
+      }
+    },
+    {
+      "input": {
+        "userMessage": "Can you explain the concept of limits in calculus in simple terms?"
+      }
+    },
+    {
+      "input": {
+        "userMessage": "How do I calculate the area of a circle?"
+      }
+    },
+    {
+      "input": {
+        "userMessage": "What are the steps to factorize a polynomial?"
+      }
+    },
+    {
+      "input": {
+        "userMessage": "How can I determine if a function is linear or nonlinear?"
+      }
+    },
+    {
+      "input": {
+        "userMessage": "What is the difference between mean, median, and mode?"
+      }
+    },
+    {
+      "input": {
+        "userMessage": "Can you explain what imaginary numbers are and how to work with them?"
+      }
+    }
+  ]
+}
+  
