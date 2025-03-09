@@ -14,8 +14,8 @@ const puzzletClient = new Puzzlet({
   }, createTemplateRunner);
 const tracer = puzzletClient.initTracing();
 
-console.log('apiKey', apiKey)
-console.log('appId', appId)
+console.log('apiKey exists', !!apiKey)
+console.log('appId exosts', !!appId)
 
 // Note: Registering all latest models for demo/development purposes. 
 // In production, you'll likely want to selectively load these, and pin models.
@@ -25,8 +25,8 @@ ModelPluginRegistry.registerAll(AllModels);
 async function run () {
   try {
     console.log('Starting run function');
-    console.log('Fetching prompt "basic-prompt.prompt.mdx"...');
-    const basicPrompt = await puzzletClient.fetchPrompt("basic-prompt.prompt.mdx");
+    console.log('Fetching prompt "templates/basic-prompt.prompt.mdx"...');
+    const basicPrompt = await puzzletClient.fetchPrompt("templates/basic-prompt.prompt.mdx");
     console.log('Successfully fetched prompt');
     
     const props = { myProp: 'hello' };
