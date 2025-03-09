@@ -6,12 +6,12 @@ import AllModels from "@puzzlet/all-models";
 
 const apiKey = process.env.PUZZLET_API_KEY!
 const appId = process.env.PUZZLET_APP_ID!
-// const baseUrl = process.env.PUZZLET_BASE_URL!
+const baseUrl = process.env.PUZZLET_BASE_URL!
 
 const puzzletClient = new Puzzlet({
     apiKey,
     appId,
-    // baseUrl
+    baseUrl
   }, createTemplateRunner);
 const tracer = puzzletClient.initTracing();
 
